@@ -1,0 +1,21 @@
+$cover-bg: #ff0089;
+
+.App {
+    background: $cover-bg;
+    color: #fff;
+    header {
+        padding: 0.5rem 1.5rem;
+    }
+    a {
+        color: inherit;
+        &.active {            
+            font-weight: bold;
+            color: $cover-bg;
+            background: darken($cover-bg,20);
+            border-radius: 0.5em;
+            $shadow: 0.125em;
+            box-shadow: inset $shadow $shadow $shadow rgba(0,0,0,0.1);
+            text-shadow: $shadow $shadow $shadow rgba(0,0,0,0.1);
+        }
+    }
+}
